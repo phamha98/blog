@@ -60,6 +60,13 @@
         </li>
         
         <li>
+          <a href="https://phamha98.github.io/blog/test/" class="menu-item">
+            <i class="fab fa-npm"></i>
+            <span class="menu-title">test</span>  
+          </a>
+        </li>
+        
+        <li>
           <a href="https://phamha98.github.io/blog/ubuntu/" class="menu-item">
             <i class="fab fa-npm"></i>
             <span class="menu-title">Ubuntu</span>  
@@ -86,7 +93,228 @@
         </h1>
       </header>
       <div class="nested-copy-line-height lh-copy f4 nested-links mid-gray">
-        
+        <h2 id="url">URL</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">url</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;a=2&amp;b=23&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">debug</span>(Object.<span style="color:#a6e22e">fromEntries</span>(<span style="color:#66d9ef">new</span> <span style="color:#a6e22e">URLSearchParams</span>(<span style="color:#a6e22e">url</span>)))
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">params</span> <span style="color:#f92672">=</span> { <span style="color:#a6e22e">a</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;2&#39;</span>, <span style="color:#a6e22e">b</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;23&#39;</span> }
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">debug</span>(<span style="color:#66d9ef">new</span> <span style="color:#a6e22e">URLSearchParams</span>(<span style="color:#a6e22e">params</span>).<span style="color:#a6e22e">toString</span>())
+</span></span></code></pre></div><h2 id="appiumhttpsgithubcomphamha98hiblobmastertypescriptmdplain1l79-l93"><a href="https://github.com/phamha98/hi/blob/master/typescript.md?plain=1#L79-L93">Appium</a></h2>
+<h2 id="xcrun">XCRUN</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>xcrun simctl list devices
+</span></span><span style="display:flex;"><span>xcrun xctrace list devices
+</span></span><span style="display:flex;"><span>xcrun simctl erase  12F1624A-B635-438A-9F81-8B3A0DC81191
+</span></span><span style="display:flex;"><span>xcrun simctl erase all
+</span></span><span style="display:flex;"><span>xcrun simctl list
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>xcrun simctl install B7AF4418-507F-4DBF-9810-6E598D161649  
+</span></span></code></pre></div><h3 id="install-ipa-to-device">Install IPA to device</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>npm install -g ios-deploy
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>xcrun xctrace list devices
+</span></span><span style="display:flex;"><span>ios-deploy --justlaunch --id &lt;device-udid&gt; --bundle /path/to/YourApp.ipa
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ios-deploy --debug --id &lt;device-udid&gt; --bundle /path/to/YourApp.ipa
+</span></span></code></pre></div><h2 id="debouncehttpsgithubcomphamha98hiblobmastertypescriptmdplain1l1-l46"><a href="https://github.com/phamha98/hi/blob/master/typescript.md?plain=1#L1-L46">Debounce</a></h2>
+<h3 id="auto-reveal-in-explorer-view-vscodehttpsgithubcomphamha98hiblobmastervscodemdplain1l82-l91"><a href="https://github.com/phamha98/hi/blob/master/vscode.md?plain=1#L82-L91">Auto Reveal in Explorer View (Vscode)</a></h3>
+<p><a href="https://github.com/microsoft/vscode/issues/168408#issuecomment-1342513210">https://github.com/microsoft/vscode/issues/168408#issuecomment-1342513210</a></p>
+<h2 id="function-chaininghttpsgithubcomphamha98hiblobmastertypescriptmdplain1l48-l60"><a href="https://github.com/phamha98/hi/blob/master/typescript.md?plain=1#L48-L60">Function chaining</a></h2>
+<h2 id="shotcut">SHOTCUT</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>open xcode  ...<span style="color:#f92672">=</span>&gt; xed .
+</span></span><span style="display:flex;"><span>open vscode  ...<span style="color:#f92672">=</span>&gt; code .
+</span></span><span style="display:flex;"><span>??vscode-&gt;<span style="color:#e6db74">&#34;Shell Command: Install &#39;code&#39; command in PATH&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>open  terminal mac  from terminal vscode
+</span></span><span style="display:flex;"><span><span style="color:#f92672">=</span>&gt;open -a Terminal .
+</span></span><span style="display:flex;"><span><span style="color:#f92672">=</span>&gt;open -a Simulator
+</span></span><span style="display:flex;"><span><span style="color:#f92672">=</span>&gt;xcrun simctl list
+</span></span><span style="display:flex;"><span><span style="color:#f92672">=</span>&gt;xcrun simctl boot &lt;UDID&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>sudo rm -rf ~/Library/Developer/Xcode/DerivedData/*
+</span></span><span style="display:flex;"><span>sudo rm -rf ~/Library/Caches/org.swift.swiftpm
+</span></span><span style="display:flex;"><span>env | grep ARCHS
+</span></span></code></pre></div><h3 id="nvm">Nvm</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>nvm alias default <span style="color:#ae81ff">18</span>
+</span></span><span style="display:flex;"><span>nvm use <span style="color:#ae81ff">18</span>
+</span></span></code></pre></div><!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>npx react-native start --port <span style="color:#ae81ff">8082</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>npx react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle
+</span></span></code></pre></div><h2 id="xcode">Xcode</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo xcode-select --switch /Applications/Xcode.app
+</span></span><span style="display:flex;"><span>sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>xcode-select --install
+</span></span><span style="display:flex;"><span>sudo xcodebuild -license
+</span></span></code></pre></div><h2 id="stash-git">STASH GIT</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>diff -u node_modules/module-name/example.js modified/example.js &gt; my-patch.patch
+</span></span><span style="display:flex;"><span>patch -p0 &lt; my-patch.patch
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git stash list
+</span></span><span style="display:flex;"><span>git diff stash@<span style="color:#f92672">{</span>0<span style="color:#f92672">}</span> &gt; my_stash.patch
+</span></span><span style="display:flex;"><span>git apply my_stash.patch
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git stash apply
+</span></span><span style="display:flex;"><span>git stash show -p &gt; my_stash.patch
+</span></span></code></pre></div><!-- raw HTML omitted -->
+<h2 id="sql-vps">SQL VPS</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>https://www.tensorflow.org/
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>yum install mariadb-server mariadb-libs mariadb
+</span></span><span style="display:flex;"><span>sudo systemctl start mariadb
+</span></span><span style="display:flex;"><span>brew services restart redis
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>mysql -u root -p
+</span></span><span style="display:flex;"><span>SELECT user,authentication_string,plugin,host FROM mysql.user;
+</span></span><span style="display:flex;"><span>SHOW DATABASES;
+</span></span><span style="display:flex;"><span>SELECT host FROM mysql.user WHERE User <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;root&#39;</span>;
+</span></span><span style="display:flex;"><span>GRANT ALL ON *.* to root@<span style="color:#e6db74">&#39;172.0.0.1&#39;</span> IDENTIFIED BY <span style="color:#e6db74">&#39;pass&#39;</span>;
+</span></span><span style="display:flex;"><span>FLUSH PRIVILEGES;
+</span></span><span style="display:flex;"><span>ALTER USER <span style="color:#e6db74">&#39;root&#39;</span>@<span style="color:#e6db74">&#39;172.0.0.1&#39;</span> IDENTIFIED BY <span style="color:#e6db74">&#39;pass&#39;</span>;
+</span></span><span style="display:flex;"><span>SET PASSWORD FOR <span style="color:#e6db74">&#39;root&#39;</span>@<span style="color:#e6db74">&#39;172.0.0.1&#39;</span> <span style="color:#f92672">=</span> PASSWORD<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;pass&#39;</span><span style="color:#f92672">)</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>sudo netstat -tuln
+</span></span><span style="display:flex;"><span>sudo ss -tlnp
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>:wq!
+</span></span><span style="display:flex;"><span>yum info firewalld
+</span></span><span style="display:flex;"><span>sudo systemctl start firewalld
+</span></span><span style="display:flex;"><span>firewall-cmd --zone<span style="color:#f92672">=</span>public --add-port<span style="color:#f92672">=</span>3306/tcp
+</span></span><span style="display:flex;"><span>sudo firewall-cmd --list-ports
+</span></span></code></pre></div><h2 id="adb">ADB</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>adb reverse tcp:8081 tcp:8081
+</span></span><span style="display:flex;"><span>adb -s emulator-5554 reverse tcp:8081 tcp:8081
+</span></span><span style="display:flex;"><span>adb -s emulator-5556 reverse tcp:8081 tcp:8081 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>adb -s emulator-5554 install myapp.apk
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>adb devices
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#reactotron</span>
+</span></span><span style="display:flex;"><span>adb -s emulator-5554 reverse tcp:9090 tcp:9090
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>adb shell input keyevent <span style="color:#ae81ff">82</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#code=82 open keyboard</span>
+</span></span><span style="display:flex;"><span>adb -s emulator-5554 shell input keyevent <span style="color:#ae81ff">82</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>adb kill-server
+</span></span><span style="display:flex;"><span>adb start-server
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>./gradlew --stop <span style="color:#75715e">#(in MacOS)</span>
+</span></span><span style="display:flex;"><span>./gradlew cleanBuildCache <span style="color:#75715e">#(in MacOS)</span>
+</span></span><span style="display:flex;"><span>rm -rf /tmp/metro-*
+</span></span><span style="display:flex;"><span>chmod -R <span style="color:#ae81ff">0777</span> /tmp
+</span></span></code></pre></div><h2 id="pm2-nodejs">PM2 nodejs</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>pm2 list
+</span></span><span style="display:flex;"><span>pm2 start app.js
+</span></span><span style="display:flex;"><span>pm2 start app.js --name <span style="color:#e6db74">&#34;my-app&#34;</span>
+</span></span><span style="display:flex;"><span>pm2 show &lt;process_name_or_id&gt;
+</span></span><span style="display:flex;"><span>pm2 stop &lt;process_name_or_id&gt;
+</span></span><span style="display:flex;"><span>pm2 restart &lt;process_name_or_id&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>pm2 stop all
+</span></span><span style="display:flex;"><span>pm2 restart all
+</span></span><span style="display:flex;"><span>pm2 delete &lt;process_name_or_id&gt;
+</span></span><span style="display:flex;"><span>pm2 save
+</span></span><span style="display:flex;"><span>pm2 logs &lt;process_name_or_id&gt;
+</span></span><span style="display:flex;"><span>pm2 logs
+</span></span><span style="display:flex;"><span>pm2 update
+</span></span></code></pre></div><h2 id="gradle-note">Gradle note</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gradle" data-lang="gradle"><span style="display:flex;"><span>subprojects <span style="color:#f92672">{</span> subproject <span style="color:#f92672">-&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span><span style="color:#f92672">(</span>project<span style="color:#f92672">[</span><span style="color:#e6db74">&#39;name&#39;</span><span style="color:#f92672">]</span> <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;react-native-reanimated&#39;</span><span style="color:#f92672">){</span>
+</span></span><span style="display:flex;"><span>        project<span style="color:#f92672">.</span><span style="color:#a6e22e">configurations</span> <span style="color:#f92672">{</span> compile <span style="color:#f92672">{</span> <span style="color:#f92672">}</span> <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><h2 id="api-shell">API Shell</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>curl -X POST  -H <span style="color:#e6db74">&#34;content-type:application/json&#34;</span> -H <span style="color:#e6db74">&#34;user-agent:RC Mobile; ios 17.2; v1.1.50 (2023080386)&#34;</span> https://abv -d <span style="color:#e6db74">&#39;{ }&#39;</span> |    jq
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i in <span style="color:#f92672">{</span>1..100<span style="color:#f92672">}</span>; <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>curl -X POST  -H <span style="color:#e6db74">&#34;content-type:application/json&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span> -H <span style="color:#e6db74">&#34;user-agent:RC Mobile; ios 17.2; v1.1.50 (2023080386)&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>-H <span style="color:#e6db74">&#34;x-auth-token:asdsadasdsadasd&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>-H <span style="color:#e6db74">&#34;x-user-id:asdasdsad&#34;</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>https://qqqq -d <span style="color:#e6db74">&#39;{&#34;message&#34;:{&#34;_id&#34;:&#34;sadsda&#34;,&#34;rid&#34;:&#34;sadsadsad&#34;,&#34;msg&#34;:&#34;Dssad&#34;,&#34;tshow&#34;:false}}&#39;</span> | jq
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span>
+</span></span></code></pre></div><h2 id="api-demo--jsonplaceholder">API demo -jsonplaceholder</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e">##*.http</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### Get User Profile Request</span>
+</span></span><span style="display:flex;"><span>GET https://jsonplaceholder.typicode.com/todos 
+</span></span><span style="display:flex;"><span>Authorization: 
+</span></span></code></pre></div><p>arch -x86_64 pod install</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h3 id="developer">Developer</h3>
+<h4 id="httpsdeveloperapplecomlibraryarchivenavigation"><a href="https://developer.apple.com/library/archive/navigation/">https://developer.apple.com/library/archive/navigation/</a></h4>
+<h4 id="httpsdeveloperapplecomcontactrequestunlisted-app"><a href="https://developer.apple.com/contact/request/unlisted-app/">https://developer.apple.com/contact/request/unlisted-app/</a></h4>
+<h4 id="httpsdeveloperapplecomlibraryarchivenavigation-1"><a href="https://developer.apple.com/library/archive/navigation/">https://developer.apple.com/library/archive/navigation/</a></h4>
+<h1 id="guilde-readmemd-write">Guilde README.md write</h1>
+<ul>
+<li>
+<p><a href="https://stackoverflow.com/questions/23821235/how-to-link-to-a-specific-line-number-on-github">https://stackoverflow.com/questions/23821235/how-to-link-to-a-specific-line-number-on-github</a></p>
+</li>
+<li>
+<p><a href="https://www.markdownguide.org/basic-syntax/">https://www.markdownguide.org/basic-syntax/</a></p>
+</li>
+<li>
+<p><a href="https://github.com/fefong/markdown_readme">https://github.com/fefong/markdown_readme</a></p>
+</li>
+</ul>
+<h2 id="js-definepropertyhttpsgithubcomphamha98hiblobmasterjavascriptmdplain1l10"><a href="https://github.com/phamha98/hi/blob/master/javascript.md?plain=1#L10">JS defineProperty</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>Object.<span style="color:#a6e22e">defineProperty</span>(<span style="color:#a6e22e">obj</span>, <span style="color:#e6db74">&#39;key&#39;</span>, {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">value</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;value&#39;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">writable</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div><h2 id="function-thishttpsgithubcomphamha98hiblobmasterjavascriptmdplain1l221-l259"><a href="https://github.com/phamha98/hi/blob/master/javascript.md?plain=1#L221-L259">Function this</a></h2>
+<h2 id="smart-githttpsgithubcomphamha98hiblobmastergitmdplain1l1-l5"><a href="https://github.com/phamha98/hi/blob/master/git.md?plain=1#L1-L5">Smart git</a></h2>
+<h2 id="git-docshttpsgithubcomphamha98hiblobmastergitmdplain1l1"><a href="https://github.com/phamha98/hi/blob/master/git.md?plain=1#L1">Git docs</a></h2>
+<h4 id="rename-branch">rename branch</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git branch -m new-name <span style="color:#75715e">#Current </span>
+</span></span><span style="display:flex;"><span>git branch -m old-name new-name
+</span></span></code></pre></div><h2 id="ssh-githttpsgithubcomphamha98hiblobmastergitmdplain1l43"><a href="https://github.com/phamha98/hi/blob/master/git.md?plain=1#L43">SSH git</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cd ~/.ssh <span style="color:#f92672">&amp;&amp;</span> ssh-keygen
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#Generating public/private rsa key pair.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#Enter file in which to save the key (/Users/phamha/.ssh/id_rsa):company</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ssh-add ~/.ssh/company
+</span></span><span style="display:flex;"><span>cat company.pub | pbcopy
+</span></span></code></pre></div><h2 id="git-admend-httpsgithubcomphamha98hiblobmastergitmdplain1l56"><a href="https://github.com/phamha98/hi/blob/master/git.md?plain=1#L56">Git admend </a></h2>
+<h2 id="js-props-typehttpsgithubcomphamha98hiblobmasterjavascriptmdplain1l168-228"><a href="https://github.com/phamha98/hi/blob/master/javascript.md?plain=1#L168-228">JS props-type</a></h2>
+<h2 id="ubuntu-settinghttpsgithubcomphamha98hiblobmasterubuntumd"><a href="https://github.com/phamha98/hi/blob/master/ubuntu.md">Ubuntu setting</a></h2>
+<h2 id="ubuntu-setting-swaphttpsgithubcomphamha98hiblobmasterubuntumdplain1l411-l453"><a href="https://github.com/phamha98/hi/blob/master/ubuntu.md?plain=1#L411-L453">Ubuntu setting swap</a></h2>
+<h2 id="codepush-httpsgithubcomphamha98hiblobmasterreactnativemdplain1l30-l154"><a href="https://github.com/phamha98/hi/blob/master/reactnative.md?plain=1#L30-L154">Codepush </a></h2>
+<h2 id="animatedhttpsgithubcomphamha98hiblobmasterreactnativemdplain1l156-l228"><a href="https://github.com/phamha98/hi/blob/master/reactnative.md?plain=1#L156-L228">Animated</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">AnimatedFlatList</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Animated</span>.<span style="color:#a6e22e">createAnimatedComponent</span>(<span style="color:#a6e22e">FlatList</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">WalletCardProps</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">y</span>: <span style="color:#66d9ef">Animated.Value</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">index</span>: <span style="color:#66d9ef">number</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">type</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">Cards</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  
+</span></span></code></pre></div><h2 id="fonts-httpsgithubcomphamha98hiblobmasterreactnativemdplain1l1-l29"><a href="https://github.com/phamha98/hi/blob/master/reactnative.md?plain=1#L1-L29">Fonts </a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">project</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">ios</span><span style="color:#f92672">:</span> {},
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android</span><span style="color:#f92672">:</span> {},
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">assets</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;./assets/fonts&#39;</span>],
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><h2 id="thanh-điều-hướng-httpsgithubcomthebylitoreact-native-navigation-bar-color"><a href="https://github.com/thebylito/react-native-navigation-bar-color">Thanh điều hướng </a></h2>
+<h2 id="npm-httpsgithubcomphamha98hiblobmasternpmmdplain1l1"><a href="https://github.com/phamha98/hi/blob/master/npm.md?plain=1#L1">Npm </a></h2>
+<h2 id="formik-httpsgithubcomphamha98hiblobmasterrootmdplain1l1-l199"><a href="https://github.com/phamha98/hi/blob/master/root.md?plain=1#L1-L199">Formik </a></h2>
+<h2 id="resize-apk-httpsgithubcomphamha98hiblobmasterrootmdplain1l200-l272"><a href="https://github.com/phamha98/hi/blob/master/root.md?plain=1#L200-L272">Resize APK </a></h2>
+<h2 id="new-certificate-httpsgithubcomphamha98hiblobmasteriosmdplain1l1-l61"><a href="https://github.com/phamha98/hi/blob/master/ios.md?plain=1#L1-L61">New certificate </a></h2>
+<h2 id="search1-httpsphamha98githubioopen"><a href="https://phamha98.github.io/open/">Search1 </a></h2>
+<h2 id="search2-httpsphamha98githubiopage"><a href="https://phamha98.github.io/page/">Search2 </a></h2>
+
       </div>
     </article>
   </div>
@@ -94,7 +322,7 @@
     </div>
   </div>
   
-  <script src="../js/copy-code.js"></script>
+  <script src="/blog/js/copy-code.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/antd@4.19.0/dist/antd.min.js"></script>
 </body>
 
