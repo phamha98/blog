@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/antd@4.19.0/dist/antd.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+  
+  <div class="wrapper">
+    <div class="left-sidebar">
+      <ul  >
+        
+        <li>
+          <a href="https://phamha98.github.io/blog/home/" class="menu-item">
+            <i class="fab fa-npm"></i>
+            <span class="menu-title">Home</span>  
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://phamha98.github.io/blog/npm/" class="menu-item">
+            <i class="fab fa-npm"></i>
+            <span class="menu-title">Npm</span>  
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://phamha98.github.io/blog/typescript/" class="menu-item">
+            <i class="fab fa-npm"></i>
+            <span class="menu-title">Typescript</span>  
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://phamha98.github.io/blog/git/" class="menu-item">
+            <i class="fab fa-npm"></i>
+            <span class="menu-title">Git</span>  
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://phamha98.github.io/blog/ios/" class="menu-item">
+            <i class="fab fa-npm"></i>
+            <span class="menu-title">Ios</span>  
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://phamha98.github.io/blog/reactnative/" class="menu-item">
+            <i class="fab fa-npm"></i>
+            <span class="menu-title">React native</span>  
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://phamha98.github.io/blog/ubuntu/" class="menu-item">
+            <i class="fab fa-npm"></i>
+            <span class="menu-title">Ubuntu</span>  
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://phamha98.github.io/blog/vscode/" class="menu-item">
+            <i class="fab fa-npm"></i>
+            <span class="menu-title">Vscode</span>  
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    <div class="main-content">
+      
+      
+  <div class="flex-l mt2 mw8 center">
+    <article class="center cf pv5 ph3 ph4-ns mw7">
+      <header>
+        <h1 class="f1">
+          React native
+        </h1>
+      </header>
+      <div class="nested-copy-line-height lh-copy f4 nested-links mid-gray">
+        <h2 id="fonts">Fonts</h2>
+<h3 id="1-create-folder--assestfontsmyfontsttf">1. create folder : assest/fonts/MyFonts.ttf</h3>
+<h3 id="2-create-file--react-nativeconfigjs">2. create file : react-native.config.js</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">module</span>.<span style="color:#a6e22e">exports</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">project</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">ios</span><span style="color:#f92672">:</span> {},
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">android</span><span style="color:#f92672">:</span> {},
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">assets</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#39;./assets/fonts&#39;</span>],
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><h3 id="3-xcode-create-folder-fontsttf-insert-myappmyappfontsmyfontsttf">3. Xcode create folder Fonts/*.ttf insert MyApp/MyApp/Fonts/MyFonts.ttf</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;key&gt;</span>UIAppFonts<span style="color:#f92672">&lt;/key&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;array&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;string&gt;</span>MyFonts.ttf<span style="color:#f92672">&lt;/string&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/array&gt;</span>
+</span></span></code></pre></div><h3 id="4-create-folder-androidappmainassestfontsmyfontsttf">4. create folder android/app/main/assest/fonts/MyFonts.ttf</h3>
+<h3 id="example">Example</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">styles</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">StyleSheet</span>.<span style="color:#a6e22e">create</span>({
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">hello</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">fontFamily</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;MyFonts&#39;</span>,
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>})
+</span></span></code></pre></div><h2 id="code-push">CODE PUSH</h2>
+<!-- raw HTML omitted -->
+<ul>
+<li><a href="">Staging</a>:Triển khai đẩy mã dành cho các bản dựng gỡ lỗi (app-debug.apk)</li>
+<li><a href="">Production</a>: Các bản phát hành sản xuất (app-release.apk).</li>
+</ul>
+<h1 id="install"><a href="">install</a></h1>
+<h2 id="install-react-native-code-push">+install: <a href="">react-native-code-push</a></h2>
+<ul>
+<li>npm:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>npm i --save react-native-code-push
+</span></span></code></pre></div><ul>
+<li>yarn:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>yarn add react-native-code-push
+</span></span></code></pre></div><h2 id="add-androidsettingsgradle">+add: <a href="">android/settings.gradle</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gradle" data-lang="gradle"><span style="display:flex;"><span>include <span style="color:#e6db74">&#39;:react-native-code-push&#39;</span>
+</span></span><span style="display:flex;"><span>project<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;:react-native-code-push&#39;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">projectDir</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> File<span style="color:#f92672">(</span>rootProject<span style="color:#f92672">.</span><span style="color:#a6e22e">projectDir</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#39;../node_modules/react-native-code-push/android/app&#39;</span><span style="color:#f92672">)</span>
+</span></span></code></pre></div><h2 id="add-androidappbuildgradle">+add: <a href="">android/app/build.gradle</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gradle" data-lang="gradle"><span style="display:flex;"><span>apply from: <span style="color:#e6db74">&#34;../../node_modules/react-native/react.gradle&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* add */</span>apply from: <span style="color:#e6db74">&#34;../../node_modules/react-native-code-push/android/codepush.gradle&#34;</span><span style="color:#75715e">//add this
+</span></span></span></code></pre></div><h2 id="add-mainapplicationjava">+add: <a href="">MainApplication.java</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">import</span> com.microsoft.codepush.react.CodePush;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//...</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MainApplication</span> <span style="color:#66d9ef">extends</span> Application <span style="color:#66d9ef">implements</span> ReactApplication {<span style="color:#75715e">//</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">final</span> ReactNativeHost mReactNativeHost <span style="color:#f92672">=</span><span style="color:#75715e">//</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">new</span> ReactNativeHost(<span style="color:#66d9ef">this</span>) {<span style="color:#75715e">//</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// add this</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">@Override</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">protected</span> String <span style="color:#a6e22e">getJSBundleFile</span>() {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> CodePush.<span style="color:#a6e22e">getJSBundleFile</span>();
+</span></span><span style="display:flex;"><span>        }    
+</span></span></code></pre></div><h2 id="add-resvaluestringxml">+add: <a href="">res/value/string.xml</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;string</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;CodePushDeploymentKey&#34;</span> <span style="color:#a6e22e">moduleConfig=</span><span style="color:#e6db74">&#34;true&#34;</span> <span style="color:#a6e22e">translatable=</span><span style="color:#e6db74">&#34;false&#34;</span><span style="color:#f92672">&gt;</span>s41PZ0E**************************<span style="color:#f92672">&lt;/string&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;string</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;appCenterCrashes_whenToSendCrashes&#34;</span> <span style="color:#a6e22e">moduleConfig=</span><span style="color:#e6db74">&#34;true&#34;</span> <span style="color:#a6e22e">translatable=</span><span style="color:#e6db74">&#34;false&#34;</span><span style="color:#f92672">&gt;</span>DO_NOT_ASK_JAVASCRIPT<span style="color:#f92672">&lt;/string&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;string</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;appCenterAnalytics_whenToEnableAnalytics&#34;</span> <span style="color:#a6e22e">moduleConfig=</span><span style="color:#e6db74">&#34;true&#34;</span> <span style="color:#a6e22e">translatable=</span><span style="color:#e6db74">&#34;false&#34;</span><span style="color:#f92672">&gt;</span>ALWAYS_SEND<span style="color:#f92672">&lt;/string&gt;</span>
+</span></span></code></pre></div><h2 id="add-mainassetsappcenter-configjson">+add: <a href="">main/assets/appcenter-config.json</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;app_secret&#34;</span>: <span style="color:#e6db74">&#34;b9*********************&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="config-ex-appjs-appjs">+config (ex App.js): <a href="">App.js</a></h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">CodePush</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;react-native-code-push&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">CodePushOptions</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">checkFrequency</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">CodePush</span>.<span style="color:#a6e22e">CheckFrequency</span>.<span style="color:#a6e22e">ON_APP_RESUME</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">mandatoryInstallMode</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">CodePush</span>.<span style="color:#a6e22e">InstallMode</span>.<span style="color:#a6e22e">IMMEDIATE</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">updateDialog</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">appendReleaseDescription</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">title</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;App có phiên bản mới bạn có muốn cập nhật!&#39;</span>,
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">App</span> () {
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//default
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//   useEffect(() =&gt; {
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//     CodePush.sync({
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//       updateDialog: true,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//       installMode: CodePush.InstallMode.IMMEDIATE,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//     })
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//   }, [])
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">return</span> <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">MyApp</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#a6e22e">CodePush</span>(<span style="color:#a6e22e">CodePushOptions</span>)(<span style="color:#a6e22e">App</span>)
+</span></span></code></pre></div><h2 id="appcenter"><a href="https://appcenter.ms/">Appcenter</a></h2>
+<ul>
+<li>create App</li>
+<li>get deployments Distribute/CodePush -&gt;setting</li>
+</ul>
+<p><a href="">install</a></p>
+<ul>
+<li>yarn</li>
+</ul>
+<pre tabindex="0"><code>yarn world add appcenter-cli
+</code></pre><ul>
+<li>npm</li>
+</ul>
+<pre tabindex="0"><code>npm set up -g appcenter-cli
+</code></pre><p><a href="">Login</a></p>
+<pre tabindex="0"><code>appcenter login
+</code></pre><h2 id="deploy">deploy:</h2>
+<ul>
+<li><a href="">code-push</a></li>
+</ul>
+<pre tabindex="0"><code>appcenter codepush release-react -a {username}/{appname} -d Production
+</code></pre><pre tabindex="0"><code>appcenter codepush release-react -a {username}/{appname} -d Staging
+</code></pre><ul>
+<li><a href="">Promote&hellip;</a></li>
+</ul>
+<h2 id="animated">Animated</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">AnimatedFlatList</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Animated</span>.<span style="color:#a6e22e">createAnimatedComponent</span>(<span style="color:#a6e22e">FlatList</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">WalletCardProps</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">y</span>: <span style="color:#66d9ef">Animated.Value</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">index</span>: <span style="color:#66d9ef">number</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">type</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">Cards</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">as</span> <span style="color:#a6e22e">React</span> <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;react&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">Text</span>, <span style="color:#a6e22e">View</span>, <span style="color:#a6e22e">StyleSheet</span> } <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;react-native&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">Constants</span> <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;expo-constants&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">App() {</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">l</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">sin</span>(<span style="color:#ae81ff">180</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">l</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">radius</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">115</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fmTop</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">p</span>) <span style="color:#f92672">=&gt;</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">_return</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">rd</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">p</span> <span style="color:#f92672">*</span> Math.<span style="color:#a6e22e">PI</span>) <span style="color:#f92672">/</span> <span style="color:#ae81ff">180</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">_cos</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">cos</span>(<span style="color:#a6e22e">rd</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">_cos</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">_return</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">radius</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">_cos</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">radius</span>;
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">else</span> <span style="color:#a6e22e">_return</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">radius</span> <span style="color:#f92672">+</span> Math.<span style="color:#a6e22e">abs</span>(<span style="color:#a6e22e">_cos</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">radius</span>);
+</span></span><span style="display:flex;"><span>  };
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">fmLeft</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">p</span>) <span style="color:#f92672">=&gt;</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">_return</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">rd</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">p</span> <span style="color:#f92672">*</span> Math.<span style="color:#a6e22e">PI</span>) <span style="color:#f92672">/</span> <span style="color:#ae81ff">180</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">_sin</span> <span style="color:#f92672">=</span> Math.<span style="color:#a6e22e">sin</span>(<span style="color:#a6e22e">rd</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">_return</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">radius</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">_sin</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">radius</span>;
+</span></span><span style="display:flex;"><span>  };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> (
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">View</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">styles</span>.<span style="color:#a6e22e">container</span>}&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">View</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span>{{
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">width</span>: <span style="color:#66d9ef">radius</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">height</span>: <span style="color:#66d9ef">radius</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">2</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">backgroundColor</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;green&#39;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">borderRadius</span>: <span style="color:#66d9ef">radius</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">justifyContent</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;center&#39;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">alignItems</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;center&#39;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">position</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;absolute&#39;</span>,
+</span></span><span style="display:flex;"><span>        }}&gt; 
+</span></span><span style="display:flex;"><span>      &lt;/<span style="color:#f92672">View</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">View</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span>{{
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">width</span>: <span style="color:#66d9ef">10</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">height</span>: <span style="color:#66d9ef">10</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// borderRadius: 10,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#a6e22e">backgroundColor</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;red&#39;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">position</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;absolute&#39;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">left</span>:<span style="color:#66d9ef">fmLeft</span>(<span style="color:#ae81ff">45</span>) <span style="color:#f92672">-</span> <span style="color:#ae81ff">5</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">top</span>: <span style="color:#66d9ef">fmTop</span>(<span style="color:#ae81ff">45</span>) <span style="color:#f92672">-</span> <span style="color:#ae81ff">5</span>,
+</span></span><span style="display:flex;"><span>          }}
+</span></span><span style="display:flex;"><span>        /&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">View</span>&gt;
+</span></span><span style="display:flex;"><span>  );
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">styles</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">StyleSheet</span>.<span style="color:#a6e22e">create</span>({
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">container</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">flex</span>: <span style="color:#66d9ef">1</span>,
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">paddingTop</span>: <span style="color:#66d9ef">Constants.statusBarHeight</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">backgroundColor</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;yellow&#39;</span>,
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div>
+      </div>
+    </article>
+  </div>
+
+    </div>
+  </div>
+  
+  <script src="/js/copy-code.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/antd@4.19.0/dist/antd.min.js"></script>
+</body>
+
+</html>

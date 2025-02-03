@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/antd@4.19.0/dist/antd.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+  
+  <div class="wrapper">
+    <div class="left-sidebar">
+      <ul  >
+        
+        <li>
+          <a href="https://phamha98.github.io/blog/home/" class="menu-item">
+            <i class="fab fa-npm"></i>
+            <span class="menu-title">Home</span>  
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://phamha98.github.io/blog/npm/" class="menu-item">
+            <i class="fab fa-npm"></i>
+            <span class="menu-title">Npm</span>  
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://phamha98.github.io/blog/typescript/" class="menu-item">
+            <i class="fab fa-npm"></i>
+            <span class="menu-title">Typescript</span>  
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://phamha98.github.io/blog/git/" class="menu-item">
+            <i class="fab fa-npm"></i>
+            <span class="menu-title">Git</span>  
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://phamha98.github.io/blog/ios/" class="menu-item">
+            <i class="fab fa-npm"></i>
+            <span class="menu-title">Ios</span>  
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://phamha98.github.io/blog/reactnative/" class="menu-item">
+            <i class="fab fa-npm"></i>
+            <span class="menu-title">React native</span>  
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://phamha98.github.io/blog/ubuntu/" class="menu-item">
+            <i class="fab fa-npm"></i>
+            <span class="menu-title">Ubuntu</span>  
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://phamha98.github.io/blog/vscode/" class="menu-item">
+            <i class="fab fa-npm"></i>
+            <span class="menu-title">Vscode</span>  
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    <div class="main-content">
+      
+      
+  <div class="flex-l mt2 mw8 center">
+    <article class="center cf pv5 ph3 ph4-ns mw7">
+      <header>
+        <h1 class="f1">
+          Git
+        </h1>
+      </header>
+      <div class="nested-copy-line-height lh-copy f4 nested-links mid-gray">
+        <h2 id="licences-smart-git">Licences smart-git</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cd ~/Library/Preferences/SmartGit/
+</span></span><span style="display:flex;"><span>sed -i <span style="color:#e6db74">&#39;&#39;</span> <span style="color:#e6db74">&#39;/listx/d&#39;</span> ./*/preferences.yml
+</span></span><span style="display:flex;"><span>rm */license
+</span></span></code></pre></div><h2 id="config">Config</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git config --global user.name &lt;username&gt;
+</span></span><span style="display:flex;"><span>git config --global user.email &lt;mailaddress&gt;
+</span></span></code></pre></div><h2 id="clone-folder">clone folder</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git clone https://github.com/phamha98/hi.git/ ./image
+</span></span><span style="display:flex;"><span>https://docs.gitlab.com/ee/ssh/
+</span></span><span style="display:flex;"><span>ssh -T git@gitlab.com
+</span></span></code></pre></div><h2 id="rename-branch">rename branch</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git branch -m new-name <span style="color:#75715e">#Current </span>
+</span></span><span style="display:flex;"><span>git branch -m old-name new-name
+</span></span></code></pre></div><h2 id="xóa-branch-old-name-trên-remote-và-push-new-name-từ-local-lên-remote">Xóa branch old-name trên remote và push new-name từ local lên remote:</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git push origin :old-name new-name
+</span></span></code></pre></div><h2 id="sửa-lại-upstream-cho-new-name-trên-local-để-sau-này-nó-push-lên-new-name-trên-remote">Sửa lại upstream cho new-name trên local để sau này nó push lên new-name trên remote</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git push origin -u new-name
+</span></span></code></pre></div><h2 id="ssh">ssh</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>https://docs.gitlab.com/ee/ssh/
+</span></span><span style="display:flex;"><span>ssh -T git@gitlab.com
+</span></span></code></pre></div><h2 id="ssh-git">SSH git</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>cd ~/.ssh <span style="color:#f92672">&amp;&amp;</span> ssh-keygen
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Generating public/private rsa key pair.
+</span></span><span style="display:flex;"><span>Enter file in which to save the key <span style="color:#f92672">(</span>/Users/phamha/.ssh/id_rsa<span style="color:#f92672">)</span>:company
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ssh-add ~/.ssh/company
+</span></span><span style="display:flex;"><span>cat company.pub | pbcopy
+</span></span></code></pre></div><h2 id="git-admend">Git admend</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git log --oneline
+</span></span><span style="display:flex;"><span>git commit --amend -m <span style="color:#e6db74">&#34;Added lines to README.md&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git push -f <span style="color:#75715e">#push force</span>
+</span></span></code></pre></div><h2 id="auto-pull">Auto pull</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> true; <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>    current_date<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>date +<span style="color:#e6db74">&#34;%Y-%m-%d %H:%M:%S&#34;</span><span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;**************start***********************************&#34;</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;start loop </span>$current_date<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;git fetch origin dev&#34;</span>
+</span></span><span style="display:flex;"><span>    git fetch origin dev
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> -n <span style="color:#66d9ef">$(</span>git status -s<span style="color:#66d9ef">)</span> <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>        echo <span style="color:#e6db74">&#34;==&gt;Changes detected. Committing...&#34;</span>
+</span></span><span style="display:flex;"><span>        git add .
+</span></span><span style="display:flex;"><span>        git commit -m <span style="color:#e6db74">&#34;Merge remote-tracking branch &#39;origin/dev&#39; into phamha98 </span>$current_date<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>       <span style="color:#75715e">####### # git push origin phamha98</span>
+</span></span><span style="display:flex;"><span>        echo <span style="color:#e6db74">&#34;==&gt;Changes committed and pushed.&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Kiểm tra xem có thay đổi nào không</span>
+</span></span><span style="display:flex;"><span>        status<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>git status --porcelain package.json<span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> -n $status <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>            echo <span style="color:#e6db74">&#34;package.json has changed. Running npm install...&#34;</span>
+</span></span><span style="display:flex;"><span>            npm install
+</span></span><span style="display:flex;"><span>            echo <span style="color:#e6db74">&#34;npm install completed.&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>        echo <span style="color:#e6db74">&#34;package.json has not changed.&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">#########</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>        echo <span style="color:#e6db74">&#34;==&gt;No changes detected.&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;wait 30s **************end*********************************** &#34;</span>
+</span></span><span style="display:flex;"><span>    sleep <span style="color:#ae81ff">30</span>  <span style="color:#75715e"># Chờ 15 phút (900 giây)</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span>
+</span></span></code></pre></div>
+      </div>
+    </article>
+  </div>
+
+    </div>
+  </div>
+  
+  <script src="/js/copy-code.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/antd@4.19.0/dist/antd.min.js"></script>
+</body>
+
+</html>

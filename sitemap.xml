@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://phamha98.github.io/blog/</loc>
+    <lastmod>2025-02-03T10:05:18+07:00</lastmod>
+  </url><url>
+    <loc>https://phamha98.github.io/blog/home/</loc>
+    <lastmod>2025-02-03T10:05:18+07:00</lastmod>
+  </url><url>
+    <loc>https://phamha98.github.io/blog/npm/</loc>
+    <lastmod>2025-02-03T10:05:18+07:00</lastmod>
+  </url><url>
+    <loc>https://phamha98.github.io/blog/typescript/</loc>
+    <lastmod>2025-02-03T10:05:18+07:00</lastmod>
+  </url><url>
+    <loc>https://phamha98.github.io/blog/categories/</loc>
+  </url><url>
+    <loc>https://phamha98.github.io/blog/git/</loc>
+  </url><url>
+    <loc>https://phamha98.github.io/blog/ios/</loc>
+  </url><url>
+    <loc>https://phamha98.github.io/blog/reactnative/</loc>
+  </url><url>
+    <loc>https://phamha98.github.io/blog/tags/</loc>
+  </url><url>
+    <loc>https://phamha98.github.io/blog/ubuntu/</loc>
+  </url><url>
+    <loc>https://phamha98.github.io/blog/vscode/</loc>
+  </url>
+</urlset>

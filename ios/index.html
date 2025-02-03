@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/antd@4.19.0/dist/antd.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+  
+  <div class="wrapper">
+    <div class="left-sidebar">
+      <ul  >
+        
+        <li>
+          <a href="https://phamha98.github.io/blog/home/" class="menu-item">
+            <i class="fab fa-npm"></i>
+            <span class="menu-title">Home</span>  
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://phamha98.github.io/blog/npm/" class="menu-item">
+            <i class="fab fa-npm"></i>
+            <span class="menu-title">Npm</span>  
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://phamha98.github.io/blog/typescript/" class="menu-item">
+            <i class="fab fa-npm"></i>
+            <span class="menu-title">Typescript</span>  
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://phamha98.github.io/blog/git/" class="menu-item">
+            <i class="fab fa-npm"></i>
+            <span class="menu-title">Git</span>  
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://phamha98.github.io/blog/ios/" class="menu-item">
+            <i class="fab fa-npm"></i>
+            <span class="menu-title">Ios</span>  
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://phamha98.github.io/blog/reactnative/" class="menu-item">
+            <i class="fab fa-npm"></i>
+            <span class="menu-title">React native</span>  
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://phamha98.github.io/blog/ubuntu/" class="menu-item">
+            <i class="fab fa-npm"></i>
+            <span class="menu-title">Ubuntu</span>  
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://phamha98.github.io/blog/vscode/" class="menu-item">
+            <i class="fab fa-npm"></i>
+            <span class="menu-title">Vscode</span>  
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    <div class="main-content">
+      
+      
+  <div class="flex-l mt2 mw8 center">
+    <article class="center cf pv5 ph3 ph4-ns mw7">
+      <header>
+        <h1 class="f1">
+          Ios
+        </h1>
+      </header>
+      <div class="nested-copy-line-height lh-copy f4 nested-links mid-gray">
+        <h2 id="new-certificate">New Certificate</h2>
+<p>FIREBASE #IOS FIREBASEIOS  #Certificate #P12</p>
+<h3 id="1-create-file-certsigningrequest">1. Create file *.certSigningRequest</h3>
+<ul>
+<li>Open Keychain Access</li>
+<li>Tabbar</li>
+<li>Certificate Assistant</li>
+<li>Request a Cerificate From a Cerificate Authority
+-User Email Address
+-Saved to disk</li>
+</ul>
+<h3 id="2-create-cer">2. Create *.cer</h3>
+<ul>
+<li>
+<p><a href="https://developer.apple.com/account/resources/certificates/list">go developer apple </a></p>
+</li>
+<li>
+<p>Certificates +</p>
+</li>
+<li>
+<p>Apple Push Notification service SSL (Sandbox &amp; Production)
+Establish connectivity between your notification server, the Apple Push Notification service sandbox, and production environments to deliver remote notifications to your app. When utilizing HTTP/2, the same certificate can be used to deliver app notifications, update ClockKit complication data, and alert background VoIP apps of incoming activity. A separate certificate is required for each app you distribute.</p>
+</li>
+<li>
+<p>App ID:
+Select&hellip; com.app</p>
+</li>
+<li>
+<p>Choose File
+CertificateSigningRequest***.certSigningRequest</p>
+</li>
+</ul>
+<p>Download</p>
+<p>aps*.cer</p>
+<h3 id="3-create-p12">3. Create *.p12</h3>
+<p>open file aps*.cer by Keychain Access</p>
+<p>-login
+-My Cerificate
+-select file <em>.com.appname
+-Export &ldquo;</em>.com.appname&rdquo;
+-Saveas name*.p12</p>
+<pre><code>Enter a password which will be userd to protect the exported items:
+Password:
+Werify:
+OK
+</code></pre>
+<h3 id="4-update-apns-certificates">4. update APNs Certificates</h3>
+<p>-https://console.firebase.google.com/project/**com.appname
+-Clound Messaging
+-Apple app configuration
+-APNs Certificates
+-Upload
+Upload your Production APNs certificate
+Apple APNs certificate
+Certificate password ?
+Upload</p>
+<p>///Link tham khao
+<a href="https://guide.pushdy.com/i/cai-dat/cach-tao-ios-push-certificate">https://guide.pushdy.com/i/cai-dat/cach-tao-ios-push-certificate</a></p>
+
+      </div>
+    </article>
+  </div>
+
+    </div>
+  </div>
+  
+  <script src="/js/copy-code.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/antd@4.19.0/dist/antd.min.js"></script>
+</body>
+
+</html>
