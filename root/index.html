@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="/blog/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/antd@4.19.0/dist/antd.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+  
+  <div class="wrapper">
+    <div class="left-sidebar">
+      <ul  >
+        
+        <li>
+          <a href="https://phamha98.github.io/blog/home/" class="menu-item">
+            <i class="fab fa-npm"></i>
+            <span class="menu-title">Home</span>  
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://phamha98.github.io/blog/npm/" class="menu-item">
+            <i class="fab fa-npm"></i>
+            <span class="menu-title">Npm</span>  
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://phamha98.github.io/blog/typescript/" class="menu-item">
+            <i class="fa-brands fa-js"></i>
+            <span class="menu-title">Typescript</span>  
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://phamha98.github.io/blog/git/" class="menu-item">
+            <i class="fa-brands fa-git"></i>
+            <span class="menu-title">Git</span>  
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://phamha98.github.io/blog/ios/" class="menu-item">
+            <i class="fa-brands fa-apple"></i>
+            <span class="menu-title">Ios</span>  
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://phamha98.github.io/blog/markdown/" class="menu-item">
+            <i class="fa-brands fa-markdown"></i>
+            <span class="menu-title">Markdown</span>  
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://phamha98.github.io/blog/reactnative/" class="menu-item">
+            <i class="fa-brands fa-react"></i>
+            <span class="menu-title">React native</span>  
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://phamha98.github.io/blog/root/" class="menu-item">
+            <i class="fa-solid fa-globe"></i>
+            <span class="menu-title">Root</span>  
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://phamha98.github.io/blog/ubuntu/" class="menu-item">
+            <i class="fab fa-npm"></i>
+            <span class="menu-title">Ubuntu</span>  
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://phamha98.github.io/blog/vscode/" class="menu-item">
+            <i class="fa-solid fa-code"></i>
+            <span class="menu-title">Vscode</span>  
+          </a>
+        </li>
+        
+      </ul>
+      <p style="font-size: 10px;color: aqua;  position: absolute; bottom: 0;left: 10px;">2025/02/03 17:17:59</p>
+    </div>
+    <div class="main-content">
+      
+      
+  <div class="flex-l mt2 mw8 center">
+    <article class="center cf pv5 ph3 ph4-ns mw7">
+      <header>
+        <h1 class="f1">
+          Root
+        </h1>
+      </header>
+      <div class="nested-copy-line-height lh-copy f4 nested-links mid-gray">
+        <h2 id="formik">Formik</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#e6db74">/(84|0[3|5|7|8|9])+([0-9]{8})\b/g</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> {<span style="color:#a6e22e">LayoutC</span>} <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;@libC&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">React</span> <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;react&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> {<span style="color:#a6e22e">StyleSheet</span>, <span style="color:#a6e22e">Text</span>, <span style="color:#a6e22e">View</span>, <span style="color:#a6e22e">TextInput</span>, <span style="color:#a6e22e">Button</span>} <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;react-native&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> {<span style="color:#a6e22e">Formik</span>, <span style="color:#a6e22e">ErrorMessage</span>} <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;fomik&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">as</span> <span style="color:#a6e22e">yup</span> <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;yup&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">phoneRegExp</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">/^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">checkValidate</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">yup</span>.<span style="color:#66d9ef">object</span>({
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">email</span>: <span style="color:#66d9ef">yup</span>
+</span></span><span style="display:flex;"><span>    .<span style="color:#66d9ef">string</span>()
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">email</span>(<span style="color:#e6db74">&#39;Không đúng định dạng email&#39;</span>)
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">required</span>(<span style="color:#e6db74">&#39;Đây là trường bắt buộc&#39;</span>)
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">min</span>(<span style="color:#ae81ff">4</span>, <span style="color:#e6db74">&#39;Tối thiểu 4&#39;</span>),
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">password</span>: <span style="color:#66d9ef">yup</span>
+</span></span><span style="display:flex;"><span>    .<span style="color:#66d9ef">string</span>()
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">min</span>(<span style="color:#ae81ff">8</span>, <span style="color:#e6db74">&#39;Minimun length of 8&#39;</span>)
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">required</span>(<span style="color:#e6db74">&#39;Required&#39;</span>),
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">confirm_password</span>: <span style="color:#66d9ef">yup</span>
+</span></span><span style="display:flex;"><span>    .<span style="color:#66d9ef">string</span>()
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">oneOf</span>([<span style="color:#a6e22e">yup</span>.<span style="color:#a6e22e">ref</span>(<span style="color:#e6db74">&#39;password&#39;</span>), <span style="color:#66d9ef">null</span>], <span style="color:#e6db74">&#39;Passwords must match&#39;</span>)
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">min</span>(<span style="color:#ae81ff">8</span>, <span style="color:#e6db74">&#39;Minimun length of 8&#39;</span>)
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">required</span>(<span style="color:#e6db74">&#39;Required&#39;</span>),
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">phone</span>: <span style="color:#66d9ef">yup</span>
+</span></span><span style="display:flex;"><span>    .<span style="color:#66d9ef">string</span>()
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">matches</span>(<span style="color:#a6e22e">phoneRegExp</span>, <span style="color:#e6db74">&#39;Phone number is not valid&#39;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// .test(&#39;cannot-begin-with-number&#39;, &#39;Cannot beging with number&#39;, value =&gt; {
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">//   return value.search(/^[0-9]/i) === -1
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#75715e">// })
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    .<span style="color:#a6e22e">min</span>(<span style="color:#ae81ff">10</span>, <span style="color:#e6db74">&#39;Tối thiểu 10 chữ số&#39;</span>)
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">required</span>(),
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">screen_transport</span> () {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;screen_transport&#39;</span>)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> (
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">LayoutC</span> <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Đang vận chuyển&#39;</span> <span style="color:#a6e22e">left</span><span style="color:#f92672">=</span>{<span style="color:#66d9ef">false</span>}&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#f92672">Formik</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">validationSchema</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">checkValidate</span>}
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// validate={validate}
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">initialValues</span><span style="color:#f92672">=</span>{{
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">email</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;&#39;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">password</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;&#39;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">confirm_password</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;&#39;</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">phone</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;&#39;</span>,
+</span></span><span style="display:flex;"><span>        }}
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">onSubmit</span><span style="color:#f92672">=</span>{(<span style="color:#a6e22e">values</span>, {<span style="color:#a6e22e">resetForm</span>}) <span style="color:#f92672">=&gt;</span> {
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">resetForm</span>()
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">values</span>)
+</span></span><span style="display:flex;"><span>        }}
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// handleChange={e =&gt; console.log(e)}
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      &gt;
+</span></span><span style="display:flex;"><span>        {({
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">handleChange</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">handleBlur</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">handleSubmit</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">handleReset</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">values</span>,
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">errors</span>,
+</span></span><span style="display:flex;"><span>        }) <span style="color:#f92672">=&gt;</span> (
+</span></span><span style="display:flex;"><span>          &lt;<span style="color:#f92672">View</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">TextInput</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">onChangeText</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">handleChange</span>(<span style="color:#e6db74">&#39;email&#39;</span>)}
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">onBlur</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">handleBlur</span>(<span style="color:#e6db74">&#39;email&#39;</span>)}
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">values</span>.<span style="color:#a6e22e">email</span>}
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span>{[
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">styles</span>.<span style="color:#a6e22e">input</span>,
+</span></span><span style="display:flex;"><span>                {<span style="color:#a6e22e">borderWidth</span>: <span style="color:#66d9ef">errors.email</span> <span style="color:#f92672">?</span> <span style="color:#a6e22e">2</span> : <span style="color:#66d9ef">0</span>, <span style="color:#a6e22e">borderColor</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;red&#39;</span>},
+</span></span><span style="display:flex;"><span>              ]}
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">placeholder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Nhập email&#39;</span>
+</span></span><span style="display:flex;"><span>            /&gt;
+</span></span><span style="display:flex;"><span>            {<span style="color:#a6e22e">errors</span>.<span style="color:#a6e22e">email</span> <span style="color:#f92672">&amp;&amp;</span> (
+</span></span><span style="display:flex;"><span>              &lt;<span style="color:#f92672">Text</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span>{{<span style="color:#a6e22e">color</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;red&#39;</span>}}&gt;
+</span></span><span style="display:flex;"><span>                {<span style="color:#e6db74">&#39;  &#39;</span>}
+</span></span><span style="display:flex;"><span>                {<span style="color:#a6e22e">errors</span>.<span style="color:#a6e22e">email</span>}
+</span></span><span style="display:flex;"><span>              &lt;/<span style="color:#f92672">Text</span>&gt;
+</span></span><span style="display:flex;"><span>            )}
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">TextInput</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">onChangeText</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">handleChange</span>(<span style="color:#e6db74">&#39;password&#39;</span>)}
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">onBlur</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">handleBlur</span>(<span style="color:#e6db74">&#39;password&#39;</span>)}
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">values</span>.<span style="color:#a6e22e">password</span>}
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span>{[
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">styles</span>.<span style="color:#a6e22e">input</span>,
+</span></span><span style="display:flex;"><span>                {<span style="color:#a6e22e">borderWidth</span>: <span style="color:#66d9ef">errors.password</span> <span style="color:#f92672">?</span> <span style="color:#a6e22e">2</span> : <span style="color:#66d9ef">0</span>, <span style="color:#a6e22e">borderColor</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;red&#39;</span>},
+</span></span><span style="display:flex;"><span>              ]}
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">placeholder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Nhập password&#39;</span>
+</span></span><span style="display:flex;"><span>            /&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">TextInput</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">onChangeText</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">handleChange</span>(<span style="color:#e6db74">&#39;confirm_password&#39;</span>)}
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">onBlur</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">handleBlur</span>(<span style="color:#e6db74">&#39;confirm_password&#39;</span>)}
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">values</span>.<span style="color:#a6e22e">confirm_password</span>}
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span>{[
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">styles</span>.<span style="color:#a6e22e">input</span>,
+</span></span><span style="display:flex;"><span>                {
+</span></span><span style="display:flex;"><span>                  <span style="color:#a6e22e">borderWidth</span>: <span style="color:#66d9ef">errors.confirm_password</span> <span style="color:#f92672">?</span> <span style="color:#a6e22e">2</span> : <span style="color:#66d9ef">0</span>,
+</span></span><span style="display:flex;"><span>                  <span style="color:#a6e22e">borderColor</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;red&#39;</span>,
+</span></span><span style="display:flex;"><span>                },
+</span></span><span style="display:flex;"><span>              ]}
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">placeholder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Nhập lai password&#39;</span>
+</span></span><span style="display:flex;"><span>            /&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">TextInput</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">onChangeText</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">handleChange</span>(<span style="color:#e6db74">&#39;phone&#39;</span>)}
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">onBlur</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">handleBlur</span>(<span style="color:#e6db74">&#39;phone&#39;</span>)}
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">value</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">values</span>.<span style="color:#a6e22e">phone</span>}
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span>{[
+</span></span><span style="display:flex;"><span>                <span style="color:#a6e22e">styles</span>.<span style="color:#a6e22e">input</span>,
+</span></span><span style="display:flex;"><span>                {<span style="color:#a6e22e">borderWidth</span>: <span style="color:#66d9ef">errors.phone</span> <span style="color:#f92672">?</span> <span style="color:#a6e22e">2</span> : <span style="color:#66d9ef">0</span>, <span style="color:#a6e22e">borderColor</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;red&#39;</span>},
+</span></span><span style="display:flex;"><span>              ]}
+</span></span><span style="display:flex;"><span>              <span style="color:#a6e22e">placeholder</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Nhập sdt&#39;</span>
+</span></span><span style="display:flex;"><span>            /&gt;
+</span></span><span style="display:flex;"><span>            {<span style="color:#a6e22e">errors</span>.<span style="color:#a6e22e">phone</span> <span style="color:#f92672">&amp;&amp;</span> (
+</span></span><span style="display:flex;"><span>              &lt;<span style="color:#f92672">Text</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span>{{<span style="color:#a6e22e">color</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;red&#39;</span>}}&gt;
+</span></span><span style="display:flex;"><span>                {<span style="color:#e6db74">&#39;  &#39;</span>}
+</span></span><span style="display:flex;"><span>                {<span style="color:#a6e22e">errors</span>.<span style="color:#a6e22e">phone</span>}
+</span></span><span style="display:flex;"><span>              &lt;/<span style="color:#f92672">Text</span>&gt;
+</span></span><span style="display:flex;"><span>            )}
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">Text</span>&gt;<span style="color:#a6e22e">test</span>&lt;/<span style="color:#f92672">Text</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">Button</span> <span style="color:#a6e22e">onPress</span><span style="color:#f92672">=</span>{<span style="color:#a6e22e">handleSubmit</span>} <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Submit&#39;</span> /&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">Text</span> /&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">Button</span> <span style="color:#a6e22e">onPress</span><span style="color:#f92672">=</span>{() <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">handleReset</span>(<span style="color:#e6db74">&#39;email&#39;</span>)} <span style="color:#a6e22e">title</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;clear email&#39;</span> /&gt;
+</span></span><span style="display:flex;"><span>          &lt;/<span style="color:#f92672">View</span>&gt;
+</span></span><span style="display:flex;"><span>        )}
+</span></span><span style="display:flex;"><span>      &lt;/<span style="color:#f92672">Formik</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">LayoutC</span>&gt;
+</span></span><span style="display:flex;"><span>  )
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">styles</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">StyleSheet</span>.<span style="color:#a6e22e">create</span>({
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">input</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">marginHorizontal</span>: <span style="color:#66d9ef">10</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">backgroundColor</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;pink&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">margin</span>: <span style="color:#66d9ef">10</span>,
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">validate</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">values</span> <span style="color:#f92672">=&gt;</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">errors</span> <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// if (!values.username) {
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">//   errors.username = &#39;Required&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// } else if (values.username.length &lt; 4) {
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">//   errors.username = &#39;Minimun length of 4&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// }
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">values</span>.<span style="color:#a6e22e">phone</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">errors</span>.<span style="color:#a6e22e">phone</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Required&#39;</span>
+</span></span><span style="display:flex;"><span>  } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">values</span>.<span style="color:#a6e22e">phone</span>.<span style="color:#a6e22e">match</span>(<span style="color:#e6db74">/\d/g</span>).<span style="color:#a6e22e">length</span> <span style="color:#f92672">===</span> <span style="color:#ae81ff">11</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">errors</span>.<span style="color:#a6e22e">phone</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Minimun length of 11&#39;</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">values</span>.<span style="color:#a6e22e">password</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">errors</span>.<span style="color:#a6e22e">password</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Required&#39;</span>
+</span></span><span style="display:flex;"><span>  } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">values</span>.<span style="color:#a6e22e">password</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">8</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">errors</span>.<span style="color:#a6e22e">password</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Minimun length of 8&#39;</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">values</span>.<span style="color:#a6e22e">confirm_password</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">errors</span>.<span style="color:#a6e22e">confirm_password</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Required&#39;</span>
+</span></span><span style="display:flex;"><span>  } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">values</span>.<span style="color:#a6e22e">confirm_password</span>.<span style="color:#a6e22e">length</span> <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">8</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">errors</span>.<span style="color:#a6e22e">confirm_password</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Minimun length of 8&#39;</span>
+</span></span><span style="display:flex;"><span>  } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">!!</span><span style="color:#a6e22e">values</span>.<span style="color:#a6e22e">password</span> <span style="color:#f92672">&amp;&amp;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">!!</span><span style="color:#a6e22e">values</span>.<span style="color:#a6e22e">confirm_password</span> <span style="color:#f92672">&amp;&amp;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">values</span>.<span style="color:#a6e22e">password</span> <span style="color:#f92672">!=</span> <span style="color:#a6e22e">values</span>.<span style="color:#a6e22e">confirm_password</span>
+</span></span><span style="display:flex;"><span>  ) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">errors</span>.<span style="color:#a6e22e">confirm_password</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Not equal to Password&#39;</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">values</span>.<span style="color:#a6e22e">email</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">errors</span>.<span style="color:#a6e22e">email</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Required&#39;</span>
+</span></span><span style="display:flex;"><span>  } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#e6db74">/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i</span>.<span style="color:#a6e22e">test</span>(<span style="color:#a6e22e">values</span>.<span style="color:#a6e22e">email</span>)) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">errors</span>.<span style="color:#a6e22e">email</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Invalid email address&#39;</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">errors</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">SignupSchema</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">yup</span>.<span style="color:#66d9ef">object</span>().<span style="color:#a6e22e">shape</span>({
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">username</span>: <span style="color:#66d9ef">yup</span>
+</span></span><span style="display:flex;"><span>    .<span style="color:#66d9ef">string</span>()
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">min</span>(<span style="color:#ae81ff">4</span>, <span style="color:#e6db74">&#39;Minimun length of 4&#39;</span>)
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">required</span>(<span style="color:#e6db74">&#39;Required&#39;</span>),
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">phone</span>: <span style="color:#66d9ef">yup</span>
+</span></span><span style="display:flex;"><span>    .<span style="color:#66d9ef">string</span>()
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">min</span>(<span style="color:#ae81ff">11</span>, <span style="color:#e6db74">&#39;Minimun length of 11&#39;</span>)
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">max</span>(<span style="color:#ae81ff">11</span>, <span style="color:#e6db74">&#39;Minimun length of 11&#39;</span>)
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">required</span>(<span style="color:#e6db74">&#39;Required&#39;</span>),
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">email</span>: <span style="color:#66d9ef">yup</span>
+</span></span><span style="display:flex;"><span>    .<span style="color:#66d9ef">string</span>()
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">email</span>(<span style="color:#e6db74">&#39;Invalid email&#39;</span>)
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">required</span>(<span style="color:#e6db74">&#39;Required&#39;</span>),
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">password</span>: <span style="color:#66d9ef">yup</span>
+</span></span><span style="display:flex;"><span>    .<span style="color:#66d9ef">string</span>()
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">min</span>(<span style="color:#ae81ff">8</span>, <span style="color:#e6db74">&#39;Minimun length of 8&#39;</span>)
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">required</span>(<span style="color:#e6db74">&#39;Required&#39;</span>),
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">confirm_password</span>: <span style="color:#66d9ef">yup</span>
+</span></span><span style="display:flex;"><span>    .<span style="color:#66d9ef">string</span>()
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">oneOf</span>([<span style="color:#a6e22e">yup</span>.<span style="color:#a6e22e">ref</span>(<span style="color:#e6db74">&#39;password&#39;</span>), <span style="color:#66d9ef">null</span>], <span style="color:#e6db74">&#39;Passwords must match&#39;</span>)
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">min</span>(<span style="color:#ae81ff">8</span>, <span style="color:#e6db74">&#39;Minimun length of 8&#39;</span>)
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">required</span>(<span style="color:#e6db74">&#39;Required&#39;</span>),
+</span></span><span style="display:flex;"><span>})
+</span></span></code></pre></div><h2 id="resize-apk">Resize APK</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>org.<span style="color:#a6e22e">gradle</span>.<span style="color:#a6e22e">jvmargs</span><span style="color:#f92672">=-</span>Xmx4608m
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>applicationVariants.<span style="color:#a6e22e">all</span> { variant <span style="color:#f92672">-&gt;</span>
+</span></span><span style="display:flex;"><span>       variant.<span style="color:#a6e22e">outputs</span>.<span style="color:#a6e22e">all</span> { output <span style="color:#f92672">-&gt;</span>
+</span></span><span style="display:flex;"><span>           def formattedDate <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Date().<span style="color:#a6e22e">format</span>(<span style="color:#960050;background-color:#1e0010">&#39;</span>HHmmss_DDMMYY<span style="color:#960050;background-color:#1e0010">&#39;</span>)
+</span></span><span style="display:flex;"><span>           outputFileName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ApplicationName-${variant.name}-v${variant.versionName}-v${defaultConfig.versionCode}-time_${formattedDate}.apk&#34;</span>
+</span></span><span style="display:flex;"><span>       }
+</span></span><span style="display:flex;"><span>   }
+</span></span></code></pre></div><p>1, giam size  file apk</p>
+<h3 id="build-nặng-do">Build nặng do:</h3>
+<ul>
+<li>1 tổng số mã Js được nhập vào ứng dụng của bạn (bao gồm trong node_modules)</li>
+<li>2 tổng mức sử dụng mã gốc trong ứng dụng của bạn.</li>
+<li>3 Tổng nội dung (hình ảnh / video / phương tiện &hellip;)
+biến thể của thiết bị mà ứng dụng của bạn hỗ trợ</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">*</span> android<span style="color:#f92672">/</span>app<span style="color:#f92672">/</span>build.<span style="color:#a6e22e">gradle</span>
+</span></span><span style="display:flex;"><span>buildTypes {
+</span></span><span style="display:flex;"><span>       
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">//add this : giam dung luong apk</span>
+</span></span><span style="display:flex;"><span>    dexOptions {
+</span></span><span style="display:flex;"><span>        incremental <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>        javaMaxHeapSize <span style="color:#e6db74">&#34;12g&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>def enableSeparateBuildPerCPUArchitecture <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span><span style="color:#75715e">//old false</span>
+</span></span><span style="display:flex;"><span>def enableProguardInReleaseBuilds <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span><span style="color:#75715e">//old false</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> <span style="color:#f92672">*</span> android<span style="color:#f92672">/</span>gradle.<span style="color:#a6e22e">properties</span>
+</span></span><span style="display:flex;"><span>    org.<span style="color:#a6e22e">gradle</span>.<span style="color:#a6e22e">jvmargs</span><span style="color:#f92672">=-</span>Xmx2048m <span style="color:#f92672">-</span>XX:MaxPermSize<span style="color:#f92672">=</span>512m <span style="color:#f92672">-</span>XX:<span style="color:#f92672">+</span>HeapDumpOnOutOfMemoryError <span style="color:#f92672">-</span>Dfile.<span style="color:#a6e22e">encoding</span><span style="color:#f92672">=</span>UTF<span style="color:#f92672">-</span>8
+</span></span><span style="display:flex;"><span>    org.<span style="color:#a6e22e">gradle</span>.<span style="color:#a6e22e">daemon</span><span style="color:#f92672">=</span><span style="color:#66d9ef">true</span>
+</span></span></code></pre></div><h3 id="doi-ten-mac-dinh">doi ten mac dinh</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>android {
+</span></span><span style="display:flex;"><span>    applicationVariants.<span style="color:#a6e22e">all</span> { variant <span style="color:#f92672">-&gt;</span>
+</span></span><span style="display:flex;"><span>        variant.<span style="color:#a6e22e">outputs</span>.<span style="color:#a6e22e">all</span> { output <span style="color:#f92672">-&gt;</span>
+</span></span><span style="display:flex;"><span>            def formattedDate <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Date().<span style="color:#a6e22e">format</span>(<span style="color:#960050;background-color:#1e0010">&#39;</span>HHmmss_DDMMYY<span style="color:#960050;background-color:#1e0010">&#39;</span>)
+</span></span><span style="display:flex;"><span>            outputFileName <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ApplicationName-${variant.name}-v${variant.versionName}-v${defaultConfig.versionCode}-time_${formattedDate}.apk&#34;</span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>android {
+</span></span><span style="display:flex;"><span>    ndkVersion rootProject.<span style="color:#a6e22e">ext</span>.<span style="color:#a6e22e">ndkVersion</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    compileSdkVersion rootProject.<span style="color:#a6e22e">ext</span>.<span style="color:#a6e22e">compileSdkVersion</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    defaultConfig {
+</span></span><span style="display:flex;"><span>        applicationId <span style="color:#e6db74">&#34;com.test123&#34;</span>
+</span></span></code></pre></div><h3 id="open-hoac-giai-nen-appl-ra-xem-cac-folder-nao-năng">open hoac giai nen appl ra xem cac folder nao năng</h3>
+<p>android/build.gradle</p>
+<pre tabindex="0"><code>release {
+    shrinkResources true
+    minifyEnabled true
+}
+</code></pre>
+      </div>
+    </article>
+  </div>
+
+    </div>
+  </div>
+  
+  <script src="/blog/js/copy-code.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/antd@4.19.0/dist/antd.min.js"></script>
+</body>
+
+</html>
